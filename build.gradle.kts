@@ -11,6 +11,11 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    testImplementation("org.assertj:assertj-core:3.27.6")
+}
+
+java {
+    targetCompatibility = JavaVersion.VERSION_24
 }
 
 tasks.test {
