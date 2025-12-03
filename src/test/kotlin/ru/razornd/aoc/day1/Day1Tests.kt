@@ -1,6 +1,5 @@
 package ru.razornd.aoc.day1
 
-import org.assertj.core.api.Assertions
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import kotlin.io.path.Path
@@ -29,9 +28,9 @@ class Day1Tests {
 
     @Test
     fun rotate() {
-        Assertions.assertThat(rotate(50, -68)).isEqualTo(82)
-        Assertions.assertThat(rotate(82, -30)).isEqualTo(52)
-        Assertions.assertThat(rotate(52, 48)).isEqualTo(0)
+        assertThat(rotate(50, -68)).isEqualTo(82)
+        assertThat(rotate(82, -30)).isEqualTo(52)
+        assertThat(rotate(52, 48)).isEqualTo(0)
     }
 
     @Test
@@ -44,12 +43,12 @@ class Day1Tests {
 
     @Test
     fun part1() {
-        Assertions.assertThat(part1(Path("input/day1-test.txt"))).isEqualTo(3)
+        assertThat(part1(Path("input/day1-test.txt"))).isEqualTo(3)
     }
 
     @Test
     fun part2() {
-        Assertions.assertThat(part2(Path("input/day1-test.txt"))).isEqualTo(6)
+        assertThat(part2(Path("input/day1-test.txt"))).isEqualTo(6)
     }
 
 }
